@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precision Auto Care | Trusted Mechanics</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#111827;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+.btn{
+background:#f97316;
+color:white;
+padding:15px 30px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#f8fafc;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.contact{
+background:#111827;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+background:#000;
+color:#ccc;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+.about{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+nav{
+    display:none;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Precision Auto Care</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Reliable Automotive Repairs & Servicing</h1>
+        <p>Keeping your vehicle safe, efficient, and road-ready.</p>
+        <a href="#contact" class="btn">Book Your Service</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Logbook Servicing</h3>
+            <p>Manufacturer-approved servicing to maintain your warranty.</p>
+        </div>
+        <div class="card">
+            <h3>Brake Repairs</h3>
+            <p>Brake inspections, pad replacement, and complete brake solutions.</p>
+        </div>
+        <div class="card">
+            <h3>Engine Diagnostics</h3>
+            <p>Advanced diagnostic tools to quickly identify vehicle issues.</p>
+        </div>
+        <div class="card">
+            <h3>Roadworthy Inspections</h3>
+            <p>Comprehensive inspections to keep your vehicle compliant.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80" alt="Mechanic Workshop">
+        <div>
+            <h2>Why Choose Us?</h2>
+            <p>
+                With over 15 years of industry experience, our qualified mechanics
+                provide honest advice, transparent pricing, and quality workmanship.
+            </p>
+            <br>
+            <p>
+                We service all makes and models and are committed to delivering
+                exceptional customer service every time.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 (03) 9000 1234</p>
+    <p>📍 Melbourne, Victoria</p>
+    <p>✉️ info@precisionautocare.com.au</p>
+</section>
+
+<footer>
+    © 2026 Precision Auto Care. All Rights Reserved.
+</footer>
+
+</body>
+</html>
