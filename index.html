@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert automotive repairs and servicing in Melbourne. Logbook servicing, brake repairs, engine diagnostics, and roadworthy inspections from trusted mechanics with 15+ years of experience.">
+    <meta name="description" content="Expert automotive repairs and servicing in Airport West, Melbourne. Logbook servicing, brake repairs, engine diagnostics, and roadworthy inspections from trusted mechanics with 15+ years of experience.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#111827">
     <title>Maccora Motor Industries | Expert Automotive Repairs & Servicing</title>
@@ -30,14 +30,13 @@
         "description": "Expert automotive repairs and servicing in Melbourne",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Melbourne",
-            "addressLocality": "Melbourne",
+            "streetAddress": "44 Hawker St",
+            "addressLocality": "Airport West",
             "addressRegion": "Victoria",
-            "postalCode": "",
+            "postalCode": "3042",
             "addressCountry": "AU"
         },
         "telephone": "+61390001234",
-        "email": "info@maccoraindustries.com.au",
         "priceRange": "$$",
         "areaServed": "Melbourne"
     }
@@ -205,40 +204,29 @@
             color: #111827;
         }
 
-        /* Testimonials Section */
-        .testimonials {
+        /* Reviews Section */
+        .reviews-section {
             background: #f8fafc;
+            text-align: center;
         }
 
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+        .rating-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
         }
 
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid #f97316;
+        .stars-large {
+            font-size: 2.5rem;
+            color: #f97316;
         }
 
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .testimonial-author {
+        .rating-text {
+            font-size: 1.3rem;
             font-weight: bold;
             color: #111827;
-        }
-
-        .stars {
-            color: #f97316;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
         }
 
         /* About Section */
@@ -271,6 +259,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hours-card h3 {
+            color: #111827;
+            margin-bottom: 15px;
         }
 
         .hours-card p {
@@ -404,6 +397,11 @@
             .services {
                 grid-template-columns: 1fr;
             }
+
+            .rating-display {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -491,25 +489,13 @@
             </div>
         </section>
 
-        <section class="testimonials" role="region" aria-label="Customer testimonials">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <div class="testimonial-grid">
-                <article class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Excellent service and honest pricing. The team at Maccora went above and beyond to help me with my vehicle."</p>
-                    <p class="testimonial-author">- John M.</p>
-                </article>
-                <article class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Professional, friendly, and thorough. I always trust my car to Maccora Motor Industries."</p>
-                    <p class="testimonial-author">- Sarah K.</p>
-                </article>
-                <article class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Great workshop with skilled mechanics. Highly recommend for all your automotive needs!"</p>
-                    <p class="testimonial-author">- Michael T.</p>
-                </article>
+        <section class="reviews-section" role="region" aria-label="Customer reviews">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="rating-display">
+                <div class="stars-large">★★★★★</div>
+                <div class="rating-text">5 Star Rating</div>
             </div>
+            <p>Trusted by customers across Melbourne for quality service and professional expertise.</p>
         </section>
 
         <section id="about" role="region" aria-label="About us">
@@ -539,15 +525,11 @@
             <div class="hours-grid">
                 <div class="hours-card">
                     <h3>Weekdays</h3>
-                    <p><span>Monday - Friday</span> <span>8:00 AM - 5:30 PM</span></p>
+                    <p><span>Monday - Friday</span> <span>8:00 AM - 4:30 PM</span></p>
                 </div>
                 <div class="hours-card">
-                    <h3>Saturday</h3>
-                    <p><span>Saturday</span> <span>8:00 AM - 1:00 PM</span></p>
-                </div>
-                <div class="hours-card">
-                    <h3>Sunday</h3>
-                    <p><span>Sunday</span> <span>Closed</span></p>
+                    <h3>Weekend</h3>
+                    <p><span>Saturday & Sunday</span> <span>Closed</span></p>
                 </div>
             </div>
         </section>
@@ -561,11 +543,7 @@
                 </div>
                 <div class="contact-item">
                     <p><strong>Location</strong></p>
-                    <p>📍 Melbourne, Victoria</p>
-                </div>
-                <div class="contact-item">
-                    <p><strong>Email</strong></p>
-                    <p><a href="mailto:info@maccoraindustries.com.au">info@maccoraindustries.com.au</a></p>
+                    <p>📍 44 Hawker St, Airport West VIC 3042</p>
                 </div>
             </div>
             <div class="social-links">
